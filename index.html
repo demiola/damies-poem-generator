@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
-    <title>Damie's Poem Generator</title>
+    <title>Poem Generator</title>
   </head>
   <body>
     <div class="container">
@@ -14,23 +15,28 @@
       </header>
 
       <main>
-        <form id="poem-generator">
-          <input
-            class="instruction"
-            id="user-instruction"
-            type="text"
-            placeholder="Enter the title of your poem e.g. robots, flowers, The city of London"
-            autofocus
-            required
-            autocomplete="off"
-          />
-          <input class="submit-button" type="submit" />
-        </form>
-        <div class="poem" id="poem-box">
-          Your Poem goes here...
-          <br />
-          <br />
+        <div class="form-container">
+          <div class="intro">
+            Hi there! I'm Eimad, a three stanza poem generator. I whip up the
+            whimsical and wax poetical all day everyday. Give me a topic, and
+            topic... and I promise I'll make you swoon with my literary genius
+            😉
+          </div>
+
+          <form id="poem-generator">
+            <input
+              class="instruction"
+              id="user-instruction"
+              type="text"
+              placeholder="Enter the title of your poem e.g. robots, flowers, The city of London"
+              autofocus
+              required
+              autocomplete="off"
+            />
+            <input class="submit-button" type="submit" />
+          </form>
         </div>
+        <div class="poem hidden" id="poem-box"></div>
       </main>
 
       <footer>
@@ -48,5 +54,6 @@
         >.
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
