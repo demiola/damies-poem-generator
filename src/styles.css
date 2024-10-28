@@ -1,0 +1,55 @@
+.container {
+  display: block;
+  margin: 120px auto;
+  max-width: 800px;
+}
+
+body {
+  background-color: rgba(127, 255, 212, 0.112);
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.5;
+  color: rgb(9, 60, 9);
+  text-align: center;
+}
+
+form {
+  padding: 20px;
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+}
+
+.instruction {
+  padding: 10px;
+  border-radius: 4px;
+  width: 80%;
+  color: rgb(9, 60, 9);
+}
+
+.submit-button {
+  width: 20%;
+  color: rgb(9, 60, 9);
+  background-color: rgba(127, 255, 212, 0.112);
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.poem {
+  border-left: 2px solid rgba(9, 60, 9, 0.7);
+  padding: 20px;
+  line-height: 24px;
+  margin: 20px 0;
+  background-color: white;
+  color: rgb(9, 60, 9);
+  font-size: medium;
+  max-height: 100%;
+}
+
+footer {
+  color: rgb(9, 60, 9);
+  text-align: center;
+}

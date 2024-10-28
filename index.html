@@ -4,22 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Damie's Poem Generator</title>
+    <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <h1>Welcome to Damie's Poem Generator!</h1>
-    <footer>
-      This AI Project was coded by
-      <a href="https://github.com/demiola/" target="_target">Damie Emiola</a>,
-      is
-      <a
-        href="https://github.com/demiola/damies-poem-generator"
-        target="_target"
-        >open-sourced on GitHub</a
-      >
-      and is
-      <a href="https://damies-poem-generator.netlify.app/" target="_target"
-        >hosted on Netlify</a
-      >.
-    </footer>
+    <div class="container">
+      <header>
+        <h1>Welcome to Damie's AI Poem Generator!</h1>
+      </header>
+
+      <main>
+        <form id="poem-generator">
+          <input
+            class="instruction"
+            id="user-instruction"
+            type="text"
+            placeholder="Enter the title of your poem e.g. robots, flowers, The city of London"
+            autofocus
+            required
+            autocomplete="off"
+          />
+          <input class="submit-button" type="submit" />
+        </form>
+        <div class="poem" id="poem-box">
+          Your Poem goes here...
+          <br />
+          <br />
+        </div>
+      </main>
+
+      <footer>
+        This AI Project was coded by
+        <a href="https://github.com/demiola/" target="_target">Damie Emiola</a>,
+        is
+        <a
+          href="https://github.com/demiola/damies-poem-generator"
+          target="_target"
+          >open-sourced on GitHub</a
+        >
+        and is
+        <a href="https://damies-poem-generator.netlify.app/" target="_target"
+          >hosted on Netlify</a
+        >.
+      </footer>
+    </div>
   </body>
 </html>
